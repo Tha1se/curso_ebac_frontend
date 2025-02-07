@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B > A ?</title>
+    <link rel="stylesheet" href="./main.css"/>
+</head>
+<body>
+    <h1>Exercício EBAC: HTML & JavaScript</h1>
+    <p><h3>Neste exercício, criamos uma validação na qual o número informado no "Campo B" precisa ser maior que o número informado no "Campo A" para que o botão "VERIFICAR" funcione.</h3><p><h3>Preencha os campos: </h3>
+    <form id="form-campos">
+        <input type="number" id="campo-a" required placeholder='Campo A'>
+        <input type="number" id="campo-b"required placeholder='Campo B'>
+        <p class="error-message">O valor do segundo campo precisa ser maior do que o valor informado no primeiro campo.</p>
+        <button id="btn-verificar" type="submit">VERIFICAR</button>
+    </form>
+    <p class="success-message"></p>
+    <script src="./main.js"></script>
+</body>
+</html>
