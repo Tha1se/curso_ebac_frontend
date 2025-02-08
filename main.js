@@ -31,6 +31,8 @@ form.addEventListener('submit', function(e) {//elemento.função('evento', funç
     } else {
         campoB.style.border = '1px solid red'
         document.querySelector('.error-message').style.display = 'block';
+        campoB.classList.remove('.success=message');
+        document.querySelector('.success-message').style.display = 'none';
     }
 })
 
@@ -41,6 +43,8 @@ campoB.addEventListener('keyup', function(e) {
     if (!formEValido){
         campoB.classList.add('error'); //a 'classList' error puxa a estilização do CSS 'input.error'
         document.querySelector('.error-message').style.display = 'block';
+        campoB.classList.remove('.success=message');
+        document.querySelector('.success-message').style.display = 'none';
     } else {
         campoB.classList.remove('error');
         document.querySelector('.error-message').style.display = 'none';
