@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <img src="./images/ilustracao_lista.webp" alt="ilustração lista">
+        <h1>Minha lista de tarefas</h1>
+        <button type="button">Nova tarefa +</button>
+    </header>
+    <form>
+        <h2>Inserir nova tarefa:</h2>
+        <input type="text" id="nova-tarefa" required placeholder="Nome da tarefa"/>
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <div class="tarefa">
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+<footer class="fixar-rodape">
+    <p>
+        &copy; Thaise - Minhas tarefas - Todos os direitos reservados - 2025
+    </p>
+</footer>
+</html>
