@@ -1,0 +1,66 @@
+@use 'config/reset';
+@use 'secoes/products';
+@use './config/variaveis.scss';
+
+body {
+    background-color: variaveis.$corBackBody;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variaveis.$corBackHeader;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+
+    .container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    li {
+        font-weight: bold;
+        margin-left: 1.5rem;
+    }
+
+    a {
+        color: variaveis.$corDoTexto;
+        text-decoration: none;
+    }
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.product-button {
+    background-color: variaveis.$corBackBotao;
+    display: block;
+    color: variaveis.$corDoTexto;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: lighten(variaveis.$corBackBotao, 5%);
+    }
+    
+}@media screen and (max-width: variaveis.$mobile) {
+    .container {
+        max-width: 80%;
+    }
+}
